@@ -6,4 +6,10 @@
     
 }
 
-#more {display: none;}
+#more {
+    display: none;
+}
+
+#about{
+    text-align: center;
+}
