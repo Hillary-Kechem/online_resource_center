@@ -10,8 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet">
-    
-    <title>ONLINE RESOURCE CENTER</title>
+    <title>LogIn and SignUp Page</title>
 </head>
 <body>
     <!-- Navbar -->
@@ -45,16 +44,19 @@
         <!-- Left links -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
+            <a class="nav-link" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT</a>
+            <a class="nav-link" href="#about">ABOUT</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="menu.html">COURSES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">CONTACTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="subscription.html">SUBSCRIPTION</a>
           </li>
         </ul>
         <!-- Left links -->
@@ -67,45 +69,38 @@
     <!-- Container wrapper -->
   </nav>
   <!-- Navbar -->
-
-
-  <!--main content-->
-  <div class="container">
-      <div class="landing">
-          <h1>ONLINE RESOURCE CENTER</h1>               
-            <p>Online Resource Center works to support students,  <br>faculty, and staff in their academic pursuits 
-                and build an inclusive community of collaboration.<span id="dots">...</span><span id="more">By providing student-centered services, resources, and spaces, <br> 
-                    we are dedicated to empowering students to think critically about and ethically engage with information.
-                    tempor porta.</span></p>
-                <button onclick="myFunction()" id="myBtn">Read more</button>
-      </div> 
-      
-      <div class= "about-container" id="about">
-          <h1>ABOUT</h1>
-          <div class="row">
-          <div class="col-4">
-            <P>
-                This is gateway to resources from across the University and offers a diverse collection of print and digital materials, <br> 
-                technology rich spaces for exploration and play, and a commitment to excellent service. Within an <br> environment
-                 of holistic community engagement, we invite users to participate in personal growth, information <br> 
-                 literacy instruction, learning and research opportunities
-              </P>
+  <body>
+    <div class="container">
+        <form id="form" class="form" autocomplete="off">
+            <h2>Please this form to enroll</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <small>Error message</small>
             </div>
-            <div class="col-6">
-                <img src="assets/pic1.jpg" class="img-fluid" alt="About" height="150px">
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <small>Error message</small>
             </div>
-          </div>
-         
-      </div>
-      
-
-
-
-
-
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Confirm Passsword</label>
+                <input type="password" id="password2" placeholder="Enter password again">
+                <small>Error message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
-  <script src= "style.js"></script>
-</body>
-</html>
+     
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="style.js"></script>
+
 </body>
 </html>
